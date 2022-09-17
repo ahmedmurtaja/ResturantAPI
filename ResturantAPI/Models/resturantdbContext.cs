@@ -27,7 +27,7 @@ namespace ResturantAPI.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("Server=localhost;port=3306;user=root;password=anmmn59;database=resturantdb;");
+                optionsBuilder.UseSqlServer("Server=localhost;database=resturantdb;");
             }
         }
 
